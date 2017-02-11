@@ -6,8 +6,8 @@ FROM pottava/python:2.7
 
 RUN apk --no-cache add --virtual build-dependencies py2-pip \
       && apk --no-cache add groff jq \
-      && pip install 'awscli == 1.11.44' \
-      && apk del --purge build-dependencies
+      && pip install 'awscli == 1.11.47' \
+      && apk del --purge -r build-dependencies
 
 ENTRYPOINT ["aws"]
 CMD ["--version"]
