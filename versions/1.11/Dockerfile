@@ -4,9 +4,11 @@
 
 FROM pottava/python:2.7
 
+ENV PAGER='cat'
+
 RUN apk --no-cache add --virtual build-dependencies py2-pip \
       && apk --no-cache add groff jq \
-      && pip install 'awscli == 1.11.166' \
+      && pip install 'awscli == 1.11.175' \
       && apk del --purge -r build-dependencies
 
 ENTRYPOINT ["aws"]
