@@ -2,9 +2,10 @@
 # docker run --rm pottava/awscli --version
 # docker run --rm -v $HOME/.aws:/root/.aws pottava/awscli iam list-users
 
-FROM pottava/python:2.7
+FROM alpine:3.6
 
-ENV PAGER=less
+ENV PAGER=less \
+    LESS="-eirMX"
 
 RUN apk --no-cache add python less
 RUN apk --no-cache add --virtual build-dependencies py2-pip \
