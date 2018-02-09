@@ -1,3 +1,7 @@
+# Dockerized AWS-CLI
+
+[![pottava/awscli](http://dockeri.co/image/pottava/awscli)](https://hub.docker.com/r/pottava/awscli/)
+
 Supported tags and respective `Dockerfile` links:
 
 ・latest ([versions/1.14/Dockerfile](https://github.com/pottava/docker-awscli/blob/master/versions/1.14/Dockerfile))  
